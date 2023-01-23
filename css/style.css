@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* NAV BAR HOVER */
+
+.nav-link{
+    
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all 0.4s;
+    height: 2px;
+    width: 100%;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after{
+    
+    opacity: 1;
+}
+
+/* LOGO ARRANGE */
+#logo{
+    margin-left: 50px;
+}
+
+
+
+.navbar-toggler {
+    
+    color: rgb(255 255 255) !important;
+    background-color: white !important;
+    
+}
+/* LOGO ARRANGE END*/
+
+
+/* NAV BAR HOVER END */
+
+
+
+/* LOGIN FORM */
+.myLoginForm{
+    width: 200px;
+    margin: 9%;
+    padding-top: 5%;
+    padding-bottom: 14%;
+}
+
+
+/* district row */
+.row{
+    --bs-gutter-x: 0 !important;
+    padding: 0% !important; 
+}
+
+/* PADDING CARD IN INDEX */
+.paddingCardinIndex{
+    padding-left: 1%;
+}
+
+
+
+.card{
+    --bs-card-border-width: 0 !important; 
+    --bs-card-border-color: 0 !important;
+    --bs-card-border-radius: 0 !important; 
+    --bs-card-inner-border-radius: 0 !important;
+}
+
+.col > img{
+    width: 257px;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 0 !important;
+}
+
+
+
+
+footer{
+    max-width: 100% !important;
+}
+

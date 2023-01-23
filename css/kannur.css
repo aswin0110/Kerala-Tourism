@@ -1,0 +1,12 @@
+.vr {
+    display: inline-block;
+    align-self: stretch;
+    width: 2px !important;
+    min-height: 65em !important;
+    background-color: currentcolor;
+    opacity: .25;
+}
+
+.content-1{
+    font-family: initial;
+}
