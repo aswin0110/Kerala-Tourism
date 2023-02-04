@@ -78,24 +78,24 @@
             <div class="row">
                 <div class="form-input col">
                     <label for="exampleInputEmail1" class="form-label">First Name</label>
-                    <input type="name" onkeyup="validatename()" class="form-control" id="fname" aria-describedby="emailHelp">
+                    <input type="name" placeholder="first name" onkeyup="validatename()" class="form-control" id="fname" aria-describedby="emailHelp">
                     <small id="fname_error">Error messages</small>
                   </div>
                 <div class="form-input col">
                     <label for="exampleInputEmail1"  class="form-label">Last Name</label>
-                    <input type="name" onkeyup="validatelast()" class="form-control" id="lname" aria-describedby="emailHelp">
+                    <input type="name" placeholder="last name" onkeyup="validatelast()" class="form-control" id="lname" aria-describedby="emailHelp">
                     <small id="lname_error">Error messages</small>
                   </div>
             </div>
              
             <div class="form-input col">
                 <label for="exampleInputEmail1" class="form-label">Mobile Number</label>
-                <input type="number"  class="form-control"  id="mnumber" aria-describedby="emailHelp">
-                <small id="error_password">Error messages</small>
+                <input type="text" placeholder="xxx-xxx-xxxx" onkeyup="validateNum()"  class="form-control"  id="mnumber" aria-describedby="emailHelp">
+                <small id="error_num">Error messages</small>
               </div>
             <div class="form-input col">
                 <label for="exampleInputEmail1" class="form-label">Email id</label>
-                <input type="email" onkeyup="validateEmails()"  class="form-control" id="emailerror" aria-describedby="emailHelp">
+                <input type="email" placeholder="youremail@gmail.com" onkeyup="validateEmails()"  class="form-control" id="emailerror" aria-describedby="emailHelp">
                 <small id="error_email">Error messages</small>
               </div>
             <div class="form-input col">

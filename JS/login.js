@@ -70,6 +70,28 @@ let emailerror = document.getElementById('emailerror');
 let passwords = document.getElementById('passwords');
 
 let regExEmails = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
+let regExNumber = /^(\d{3})-?(\d{3})-?(\d{4})$/g
+
+function validateNum(){
+    if (mnumber.value.trim() ==''){
+        error_num.innerHTML ='<h6 style="color: red;">Email cant blank</h6>';
+        
+    }
+
+    else if(!mnumber.value.match(regExNumber)){
+        error_num.innerHTML = '<h6 style="color: red;">Number must have 10 digitsp/>';
+        
+
+    }
+    else{
+        error_num.innerHTML = '<h6 style="color: green;">Validated!</h6>';
+        
+    }
+
+}
+
+
+
 
 function validatename(){
     if (fname.value.trim()==''){
@@ -81,6 +103,7 @@ function validatename(){
         fname_error.innerHTML = '<h6 style="color: green;">Validated!</h6>';
         
     }
+    
 }
 
 function validatelast(){
