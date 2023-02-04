@@ -152,3 +152,15 @@ body{
     background: #2eb7e5;
     
 }
+
+
+.form-box small{
+    color: rgb(255, 255, 255);
+}
+
+.card-body h6{
+    font-family: math;
+    font-size: 11px;
+    padding-left: 16px;
+    padding-top: 2px;
+}

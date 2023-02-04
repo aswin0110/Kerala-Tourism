@@ -73,35 +73,40 @@
         <h4 class="title text-center mt-4">
           Create a account
         </h4>
-        <form class="form-box px-3">
+        <form class="form-box px-3" action="../index.html">
 
             <div class="row">
                 <div class="form-input col">
                     <label for="exampleInputEmail1" class="form-label">First Name</label>
-                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
+                    <input type="name" onkeyup="validatename()" class="form-control" id="fname" aria-describedby="emailHelp">
+                    <small id="fname_error">Error messages</small>
+                  </div>
                 <div class="form-input col">
-                    <label for="exampleInputEmail1" class="form-label">Last Name</label>
-                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
+                    <label for="exampleInputEmail1"  class="form-label">Last Name</label>
+                    <input type="name" onkeyup="validatelast()" class="form-control" id="lname" aria-describedby="emailHelp">
+                    <small id="lname_error">Error messages</small>
+                  </div>
             </div>
              
             <div class="form-input col">
                 <label for="exampleInputEmail1" class="form-label">Mobile Number</label>
-                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
+                <input type="number"  class="form-control"  id="mnumber" aria-describedby="emailHelp">
+                <small id="error_password">Error messages</small>
+              </div>
             <div class="form-input col">
                 <label for="exampleInputEmail1" class="form-label">Email id</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
+                <input type="email" onkeyup="validateEmails()"  class="form-control" id="emailerror" aria-describedby="emailHelp">
+                <small id="error_email">Error messages</small>
+              </div>
             <div class="form-input col">
                 <label for="exampleInputEmail1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
+                <input type="password" onkeyup="validatePassword()" class="form-control" id="passwords" aria-describedby="emailHelp">
+                <small id="error_pass">Error messages</small>
+              </div>
 
           
             <div class="d-grid gap-2">
-                <button class="btn btn-primary" type="button">Sign up</button>
+                <button class="btn btn-primary" onclick="return validate()" type="submit">Sign up</button>
                 
             </div>
           
@@ -127,8 +132,8 @@
 
 
 
-
-
+<script src="../JS/login.js"></script>
+</body>
 <!-- 
   <div class="container pt-5">
     <div class="row align-items-center">
@@ -158,3 +163,5 @@
       
     </div>
   </div> -->
+
+  
