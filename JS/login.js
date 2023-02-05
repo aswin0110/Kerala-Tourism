@@ -105,24 +105,6 @@ function validatelast(){
     }
 }
 
-function validateEmails(){
-    if (emailerror.value.trim() ==''){
-        error_email.innerHTML = '<h6 style="color: red;">Email cant blank</h6>';
-        return false
-    }
-
-    else if(!emailerror.value.match(regExEmails)){
-        error_email.innerHTML = '<h6 style="color: red;">Email is not in proper format<p/>';
-        return false
-
-    }
-    else{
-        error_emailr.innerHTML = '<h6 style="color: green;"> Validated!</h6>';
-        return true
-    }
-
-}
-
 function validateNum(){
     if (mnumber.value.trim() ==''){
         error_num.innerHTML ='<h6 style="color: red;">Email cant blank</h6>';
@@ -140,6 +122,24 @@ function validateNum(){
         error_num.innerHTML = '<h6 style="color: green;">Validated!</h6>';
         return true
         
+    }
+
+}
+
+function validateEmails(){
+    if (emailerror.value.trim() ==''){
+        error_email.innerHTML = '<h6 style="color: red;">Email cant blank</h6>';
+        return false
+    }
+
+    else if(!emailerror.value.match(regExEmails)){
+        error_email.innerHTML = '<h6 style="color: red;">Email is not in proper format<p/>';
+        return false
+
+    }
+    else{
+        error_emailr.innerHTML = '<h6 style="color: green;"> Validated!</h6>';
+        return true
     }
 
 }
@@ -164,7 +164,7 @@ function validatePassword(){
     }
     else if(passwords.value.length>=9 && passwords.value.length <=11){
         error_pass.innerHTML = '<h6 style= "color:orange">Medium<p/>';
-        return true
+        return false
 
     }
     else{
@@ -175,7 +175,7 @@ function validatePassword(){
 }
 
 function validateSignup(){
-    if(!validatename() || !validatelast() || !validateNum() || !validateEmails() || !validatePassword()){
+    if(!validatename() || !validatelast() || !validateNum() || !validatePassword() || !validateEmails() ){
     return false
 
     }
